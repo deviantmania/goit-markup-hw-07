@@ -1,0 +1,168 @@
+:root {
+    --brand-color: #4D5AE5;
+    /* Iris */
+    --title-text-color: #2E2F42;
+    /* Navy blue */
+    --pressed-state-color: #404BBF;
+    /* OCEAN */
+    --text-color: #434455;
+    /*SLATE*/
+    --white-color: #FFFFFF;
+    --light-backgrounds-color: #F4F4FD;
+    /* CLOUD*/
+    --accent-color: #E7E9FC;
+    /* cornflower */
+    --helper-text-color: #8E8F99;
+    /*LIGHT SLATE*/
+    --success-color: #31D0AA;
+    /*GREEN*/
+    --color-background-primary: #FFFFFF;
+    --modal-backgrounds-color: #FCFCFC;
+
+
+
+    --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /*========== Font and typography ==========*/
+    --body-font: Roboto, sans-serif;
+    --h1-font-size: 56px;
+    --h2-font-size: 36px;
+    --h3-font-size: 20px;
+    --body-font-size: 16px;
+    --small-font-size: 12px;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+
+}
+
+@media screen and (max-width: 1198px) {
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header-contacts .link {
+            font-style: normal;
+            font-weight: var(--font-regular);
+            font-size: var(--small-font-size);
+            line-height: 1.17px;
+            letter-spacing: 0.04em;
+        }
+    .container {
+        max-width: 768px;
+    }
+    .header-container-desktop{
+        display: flex;
+    }
+
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/middle/m-people-office.jpg);
+        max-width: 768px;
+        height: 436px;
+    }
+    .hero-title {
+        max-width: 496px;
+        margin-bottom: 40px;
+        font-size: var(--h1-font-size);
+        line-height: 1.07;
+    }
+    .section-specifics-list{
+        flex-direction: row;
+    }
+    .section-specifics-list h3{
+        text-align: left;
+    }
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-title{
+      
+        font-weight: var(--font-bold);
+        font-size: 36px;        
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+    }
+    .footer-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .subscribe-email-style{
+        width: 264px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+    
+    .header-contacts .link{
+        font-style: normal;
+        font-weight: var(--font-regular);
+        font-size: var(--small-font-size);
+        line-height: 1.17px;
+        letter-spacing: 0.04em;
+    }
+    .auth-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 24px ;
+        padding-bottom: 12px;
+        font-weight: var(--font-regular);
+        font-size: 12px;
+    }
+    
+    .auth-nav .item:not(:last-child) {
+        margin-bottom: 6px;
+    }
+    .section-specifics-list {
+        gap: 24px; 
+    }
+    .specifics-list{
+        max-width: 356px;
+        max-height: 120px;
+    }
+    .team-card:not(:nth-child(2n)) {
+        margin-right: 24px;
+    }
+    .team-card{
+        margin-bottom: 64px;
+
+    }
+    .section-title{
+
+    }
+    .costomers-icons-item:not(:nth-child(3n)) {
+        margin-right: 24px;
+        margin-bottom: 72px;
+    }
+    .footer-cont{
+        column-gap: 24px;
+        max-width: 530px;
+       
+    }
+    .footer-text{
+        max-width: 264px;
+    }
+    .footer-form-container{
+        margin-top: 72px;
+    }
+    
+
+}
+@media screen and (min-width: 768px){
+    .footer-cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-logo{
+        text-align: left;
+    }
+}
