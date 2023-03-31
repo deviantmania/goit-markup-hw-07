@@ -44,6 +44,9 @@
         padding-top: 96px;
         padding-bottom: 96px;
     }
+    .specifics-top{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -82,15 +85,17 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 64px 24px;
     }
     .section-title{
-      
+        
         font-weight: var(--font-bold);
         font-size: 36px;        
         line-height: 1.11;
         letter-spacing: 0.02em;
     }
     .footer-form{
+        gap: 24px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -134,25 +139,24 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
         margin-bottom: 6px;
     }
     .section-specifics-list {
-        gap: 24px; 
+        gap: 72px 24px; 
     }
     .specifics-list{
         max-width: 356px;
         max-height: 120px;
     }
     .team-card:not(:nth-child(2n)) {
-        margin-right: 24px;
+        
     }
     .team-card{
-        margin-bottom: 64px;
+       
 
     }
     .section-title{
 
     }
     .costomers-icons-item:not(:nth-child(3n)) {
-        margin-right: 24px;
-        margin-bottom: 72px;
+        
     }
     .footer-cont{
         column-gap: 24px;

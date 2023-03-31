@@ -98,32 +98,18 @@
         flex-wrap: nowrap;
         gap: 24px;
     }
-    .specifics-list::before{
-        display: block;
-        content: "";
-        padding: 24px 100px;
-        margin-bottom: 8px;
-        height: 112px;
-        background-repeat: no-repeat;
-        background-size: 64px 64px;
-        background-position: center center;
+    .specifics-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: var(--light-backgrounds-color);
+        margin-bottom: 8px;
         border-radius: 4px;
+        height: 112px;
     }
-        .icon-antenna::before {
-            background-image: url(../images/icons.svg#icon-antenna);
-        }
-    
-        .icon-clock::before {
-            background-image: url(../images/icons.svg#icon-antenna);
-        }
-    
-        .icon-diagram::before {
-            background-image: url(../images/icons.svg#icon-antenna);
-        }
-    
-        .icon-astronaut::before {
-            background-image: url(../images/icons.svg#icon-antenna);
+        .specifics-icon {
+            width: 64px;
+            height: 64px;
         }
         .specifics-list .title{
             font-weight: var(--font-medium);
@@ -132,10 +118,10 @@
         }
         
         .team-card:not(:last-child) {
-            margin-right: 24px;
+            
         }
         .costomers-icons-item:not(:last-child) {
-            margin-right: 24px;
+            
         }
         .section-title{
            font-weight: var(--font-bold);

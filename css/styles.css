@@ -57,7 +57,6 @@ button {
     border-radius: 4px;
     font-weight:var(--font-medium);
     font-size: 16px;
-    line-height: 1.5;
     letter-spacing: 0.04em;
     font-family: 'Roboto';
     border: 1px solid transparent;
@@ -125,6 +124,7 @@ body{
     color: var(--text-color);
     background-color: var(--color-background-primary);
 }
+
 .header{
     border-bottom: 1px solid var(--accent-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -294,7 +294,7 @@ color:  var(--pressed-state-color);
     position: relative;
     background-color: var(--modal-backgrounds-color);
     width: 408px;
-    height: 576px;
+    
     padding: 72px 24px 24px 24px;
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -330,9 +330,10 @@ color:  var(--pressed-state-color);
 
     
 .modal-text{
-    font-weight: var(--font-regular);
-    letter-spacing: 0.04em;
-    line-height: 1.16;
+    font-weight: var(--font-medium);
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
     color: var(--title-text-color);
 
@@ -667,8 +668,9 @@ color:  var(--pressed-state-color);
     
 }
 .icons-list{
+    gap: 24px;
     display: flex;
-        flex-wrap: wrap;
+     flex-wrap: wrap;
         justify-content: center;
 }
 .icons-item{
@@ -677,7 +679,6 @@ color:  var(--pressed-state-color);
 }
 
 .icons-item:not(:last-child) {
-    margin-right: 24px;
 }
 .icons-item-link{
     display: flex;
@@ -706,6 +707,7 @@ color:  var(--pressed-state-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 72px 24px;
 }
 .costomers-icons-item{ 
     width: 168px;
@@ -780,7 +782,7 @@ color:  var(--pressed-state-color);
 }
 .footer-social-list{
         display: flex;
-        
+        gap: 16px;
 }
 .icons-social-footer{
     width: 24px;
@@ -813,9 +815,9 @@ color:  var(--pressed-state-color);
 .footer-form {
   
 }
-.subscribe-email-style{
+/* .subscribe-email-style{
     margin-right: 24px;
-}
+} */
 .subscribe-email{
     padding-left: 16px;
     width: 100%;
@@ -863,6 +865,9 @@ color:  var(--pressed-state-color);
 }
 
 .footer-icons-item:not(:last-child) {
-    margin-right: 16px;
+
 }
 
+body {
+    min-width: 252px;
+}
