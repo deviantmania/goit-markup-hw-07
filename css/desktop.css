@@ -73,6 +73,8 @@
     }
 }
 
+
+
 @media screen and (min-width: 1200px){
 
     .hero {
@@ -153,5 +155,16 @@
     }
     .footer-form{
         flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/middle/m-people-office.jpg);
     }
 }
